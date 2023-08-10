@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="button">
+            <input id="content" type="text" placeholder="nhap content">
+            <input id="assignedTo" type="text" name="" placeholder="nhap assignedTo">
+            <button id="add" onclick="addPeople()">add</button>
+        </div>
+    </div>
+    
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>content</th>
+                <th>dueDate</th>
+                <th>status</th>
+                <th>assignedTo</th>
+                <th colspan="2">action</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td>1</td>
+                <td>learn js session 1</td>
+                <td>2023-04-17</td>
+                <td>pending</td>
+                <td>hướng dương</td>
+                <td>
+                    <button id="updatepeole">update</button>
+                </td>
+                <td>
+                    <button id="deletepeople">delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div id="question" style="display: none;">
+        <input type="text" id="editContent">
+        <input type="text" id="editAssigned">
+        <button onclick="onUpdate()">update</button>
+        <button onclick="onCancel()">cancel</button>
+    </div>
+
+    <script src="bt4.js"></script>
+</body>
+</html>

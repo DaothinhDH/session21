@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ff9900;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        h1 {
+            text-align: center;
+            color: #a43939;
+        }
+    
+        form {
+            margin-top: 20px;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #b82323;
+        }
+    
+        input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #dc1de0;
+        }
+    
+        #message {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+    
+    <body>
+        <div class="container">
+            <h1>Đăng Ký Tài Khoản</h1>
+            <form id="registrationForm" onsubmit="saveAccount()">
+                <div>
+                    <label>Email:</label>
+                    <input type="email" id="email" required>
+                </div>btn_delete
+                <div>
+                    <label>Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div>
+                    <label>Confirm Password:</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <div>
+                    <button type="submit">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    
+        <script src="bt3.js"></script>
+</body>
+</html>
